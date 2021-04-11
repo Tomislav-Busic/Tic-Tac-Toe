@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div id="game">
+        
+        <button onClick="startGame()">Replay</button>
+        <div class="section">
+            <table>
+                <tr>
+                    <td class="cell" id="0"></td>
+                    <td class="cell" id="1"></td>
+                    <td class="cell" id="2"></td>
+                </tr>
+                <tr>
+                    <td class="cell" id="3"></td>
+                    <td class="cell" id="4"></td>
+                    <td class="cell" id="5"></td>
+                </tr>
+                <tr>
+                    <td class="cell" id="6"></td>
+                    <td class="cell" id="7"></td>
+                    <td class="cell" id="8"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="endgame">
+            <div class="text"></div>
+        </div>
+    
+        <div class="intro">
+            <div class="intro-text">
+                <h1 class="hide">
+                    <span class="text1">Tic</span>
+                </h1>
+                <h1 class="hide">
+                    <span class="text1">Tac</span>
+                </h1>
+                <h1 class="hide">
+                    <span class="text1">Toe</span>
+                </h1>
+            </div>
+        </div>
+    
+        <div class="slider"></div>
+
+    </div>
+    
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" 
+    integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" 
+    crossorigin="anonymous"></script>
+
+    <script src="./main.js"></script>
+</body>
+</html>

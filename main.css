@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka One', cursive;
+}
+
+#game{
+    min-height: 100vh;
+    background-color: crimson;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    margin: 5%;
+    background: black;
+    height: 80px;
+    width: 200px;
+    border: none;
+    border-radius: 10%;
+    color: crimson;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.section{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+table{
+    border-collapse: collapse;
+    position: absolute;
+}
+
+
+table tr:first-child td{
+    border-top: none;
+}
+
+table tr:last-child td{
+    border-bottom: none;
+}
+
+table tr td:first-child{
+    border-left: none;
+}
+
+table tr td:last-child{
+    border-right: none;
+}
+
+.endgame{
+    display: none;
+    background-color: rgb(29, 59, 59, 0.8);
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 20%;
+    border-radius: 10%;
+}
+
+.text{
+    padding: 20%;
+    font-size: 150px;
+    font-weight: bold;
+    text-align: center;
+    color: crimson;
+}
+
+td{
+    border: 5px solid #333;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 150px;
+    cursor: pointer;
+}
+
+.intro{
+    background:  black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    background:  rgb(190, 183, 183);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%); /*da se spusti skroz dolje*/
+}
+
+.intro-text{
+    color: crimson;
+    font-family: 'Heebo', sans-serif;
+    font-size: 50px;
+}
+
+.hide{
+    background: black;
+    overflow: hidden;
+}
+
+.hide span{
+    transform: translateY(100%);
+    display: inline-block; /*to su inline elementi pa nam ovo omogućava da pomičemo gore dolje*/
+}
+
+@media (max-width: 500px) {
+    .section{
+        padding-top: 30%;
+    }
+    td{
+        font-size: 50px;
+        height: 100px;
+        width: 100px;
+    }
+    .text{
+        font-size: 80px;
+        padding-top: 50%;
+    }
+}
